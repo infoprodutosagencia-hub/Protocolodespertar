@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astral Ascension</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-gold: #FFD700;
+        --color-purple: #4B0082;
+        --color-violet: #8B00FF;
+        --color-cyan: #00F5FF;
+      }
+      
+      body {
+        background-color: #000000;
+        font-family: 'Quicksand', sans-serif;
+        cursor: none; /* Custom cursor handling */
+        overflow-x: hidden;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cinzel', serif;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #4B0082, #FFD700); 
+        border-radius: 4px;
+      }
+
+      /* Animations */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+      }
+
+      @keyframes pulse-glow {
+        0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+        50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); }
+        100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); }
+      }
+
+      @keyframes rotate-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes shine {
+        0% { background-position: 200% center; }
+        100% { background-position: -200% center; }
+      }
+
+      @keyframes glitch {
+        0% { transform: translate(0) }
+        20% { transform: translate(-2px, 2px) }
+        40% { transform: translate(-2px, -2px) }
+        60% { transform: translate(2px, 2px) }
+        80% { transform: translate(2px, -2px) }
+        100% { transform: translate(0) }
+      }
+
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      .animate-rotate-slow { animation: rotate-slow 60s linear infinite; }
+      .animate-pulse-glow { animation: pulse-glow 3s infinite; }
+      
+      .text-glow {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      }
+      
+      .text-holographic {
+        text-shadow: -2px 0 rgba(0, 245, 255, 0.5), 2px 0 rgba(255, 0, 255, 0.5);
+      }
+
+      .glass-panel {
+        background: rgba(26, 26, 46, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(139, 0, 255, 0.2);
+      }
+      
+      /* Specific for the Mandala */
+      .mandala-spin {
+        animation: rotate-slow 120s linear infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
