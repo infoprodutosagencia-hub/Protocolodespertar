@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Protocolo Despertar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Import Map for External Dependencies -->
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.303.0?deps=react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+    
+    <!-- Babel Standalone for runtime JSX/TS compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
@@ -62,15 +79,6 @@
         100% { background-position: -200% center; }
       }
 
-      @keyframes glitch {
-        0% { transform: translate(0) }
-        20% { transform: translate(-2px, 2px) }
-        40% { transform: translate(-2px, -2px) }
-        60% { transform: translate(2px, 2px) }
-        80% { transform: translate(2px, -2px) }
-        100% { transform: translate(0) }
-      }
-
       .animate-float { animation: float 6s ease-in-out infinite; }
       .animate-rotate-slow { animation: rotate-slow 60s linear infinite; }
       .animate-pulse-glow { animation: pulse-glow 3s infinite; }
@@ -95,20 +103,10 @@
         animation: rotate-slow 120s linear infinite;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react/": "https://esm.sh/react@18.2.0/",
-    "react-dom": "https://esm.sh/react-dom@18.2.0",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.303.0"
-  }
-}
-</script>
 </head>
   <body>
     <div id="root"></div>
+    <!-- Load the single bundled file -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

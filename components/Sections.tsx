@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Sparkles, Zap, ShieldCheck, CreditCard, ChevronDown, CheckCircle2, AlertTriangle, Crown, Volume2, VolumeX, BookOpen, Flame, Brain, Radio, Music, Library, XCircle, ArrowRight, HelpCircle } from 'lucide-react';
-import { Reveal, SacredGeometry, PortalButton } from './VisualEffects';
-import { MODULES, BENEFITS, PRICING, FAQS } from '../constants';
-import { ModuleCardProps } from '../types';
+import { Reveal, SacredGeometry, PortalButton } from './VisualEffects.tsx';
+import { MODULES, BENEFITS, PRICING, FAQS } from '../constants.ts';
+import { ModuleCardProps } from '../types.ts';
 
 // --- HERO SECTION ---
 export const HeroSection: React.FC = () => {
@@ -358,7 +358,7 @@ export const Footer: React.FC = () => (
     <div className="max-w-4xl mx-auto px-4">
       <Crown className="w-8 h-8 text-gray-600 mx-auto mb-6" />
       <p className="text-gray-600 text-sm mb-4">
-        &copy; {new Date().getFullYear()} Astral Ascension. Todos os direitos reservados.
+        &copy; {new Date().getFullYear()} Protocolo Despertar. Todos os direitos reservados.
       </p>
       <p className="text-gray-700 text-xs max-w-xl mx-auto">
         Aviso Legal: Os resultados podem variar de pessoa para pessoa. Este produto não substitui o parecer médico ou profissional.

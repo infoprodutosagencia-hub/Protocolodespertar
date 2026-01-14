@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
-import StarField from './components/StarField';
-import { HeroSection, StorySection, ModulesSection, BonusSection, OfferSection, ChoicesSection, FAQSection, Footer, AudioController } from './components/Sections';
-import { CustomCursor } from './components/VisualEffects';
+import React from 'react';
+import StarField from './components/StarField.tsx';
+import { HeroSection, StorySection, ModulesSection, BonusSection, OfferSection, ChoicesSection, FAQSection, Footer, AudioController } from './components/Sections.tsx';
+import { CustomCursor } from './components/VisualEffects.tsx';
 
 function App() {
   return (

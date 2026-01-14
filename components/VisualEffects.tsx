@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { RevealProps } from '../types';
+import { RevealProps } from '../types.ts';
 
 // --- Custom Cursor ---
 export const CustomCursor: React.FC = () => {
