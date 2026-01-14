@@ -5,7 +5,7 @@ import { CustomCursor } from './components/VisualEffects';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black text-white selection:bg-[#FFD700] selection:text-black">
+    <div className="relative min-h-screen text-white selection:bg-[#FFD700] selection:text-black">
       {/* Background Layer */}
       <StarField />
       
